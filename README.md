@@ -31,3 +31,4 @@
    13. bookmark/views BookmarkUpdateView
    14. Bookmark/urls bookmark:edit
    15. templates bookmark_update.html
+   16. get_absolute_url() in Bookmark
