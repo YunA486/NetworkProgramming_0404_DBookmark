@@ -45,3 +45,11 @@
   - accounts/models Profile
     - python manage.py makemigrations accounts
     - python manage.py migrate accounts
+  - bookmark/models add profile in Bookmark
+    - python manage.py makemigrations bookmark
+      1. 기존에 자료가 있으면, 에러남.(다 지우고 다시 하거나)
+      2. Bookmark의 profile에 null=True
+      3. python manage.py makemigrations bookmark
+    - python manage.py migrate bookmark
+      - admin 사이트에서 로그인 후, Profile 하나 추가하고,
+      - 기존 북마크에 profile 지정하기
