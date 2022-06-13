@@ -63,3 +63,4 @@
   - login, logout
     - accounts/forms LoginForm
     - accounts/views my_login, my_logout
+    - accounts/urls accounts:login, logout
