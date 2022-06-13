@@ -5,7 +5,9 @@
 {% block content %}
 <form action="" method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form.profile.as_hidden }}
+    <p>{{ form.name.label_tag }} {{ form.name }}</p>
+    <p>{{ form.url.label_tag }} {{ form.url }}</p>
     <input type="submit" value="Add" class="btn btn-success">
 </form>
 {% endblock %}

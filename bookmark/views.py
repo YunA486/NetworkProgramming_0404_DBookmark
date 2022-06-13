@@ -15,8 +15,9 @@ class BookmarkListView(ListView):
             # user -> profile -> bookmark_list
             profile = Profile.objects.get(user=user)    # user -> profile
             bookmark_list = Bookmark.objects.filter(profile=profile)    # profile -> bookmark_list
-        else:   # 로그인 안하면, 북마크 보이지 말기
-            bookmark_list = Bookmark.objects.none()
+        else:
+            # bookmark_list = Bookmark.objects.all()    # 로그인 안하면, 북마크 다 보이이기
+           bookmark_list = Bookmark.objects.none()     # 로그인 안하면, 북마크 보이지 말기
         return bookmark_list
 
 class BookmarkCreateView(CreateView):
