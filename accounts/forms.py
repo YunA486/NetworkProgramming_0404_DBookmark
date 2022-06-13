@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
 from accounts.models import Profile
-
+from accounts import models
 
 class RegisterForm(UserCreationForm):
     username = forms.CharField(label='사용자명', widget=forms.TextInput(attrs={

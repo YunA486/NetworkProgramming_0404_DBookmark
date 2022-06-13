@@ -64,3 +64,5 @@
     - accounts/forms LoginForm
     - accounts/views my_login, my_logout
     - accounts/urls accounts:login, logout
+    - accounts/templates/accounts login, login_fail
+      - bookmark/templates/bookmark login, logout

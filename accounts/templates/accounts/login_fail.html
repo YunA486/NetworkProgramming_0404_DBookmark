@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}logout{% endblock %}
+
+{% block content %}
+    Login Fil.
+    <p><a href="{% url 'accounts:register' %}" class="btn btn-primary">register</a></p>
+    <p><a href="{% url 'accounts:login' %}" class="btn btn-warning">login</a></p>
+
+{% endblock %}
