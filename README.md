@@ -62,3 +62,4 @@
       - bookmark/templates/bookmark bookmark_list
   - login, logout
     - accounts/forms LoginForm
+    - accounts/views my_login, my_logout
