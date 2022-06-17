@@ -140,3 +140,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # MEDIA(사용자가 업로드한 파일)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')  # 업로드한 파일 위치
+
+# Login
+LOGIN_URL = '/accounts/login/'
